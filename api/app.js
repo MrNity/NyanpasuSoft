@@ -26,13 +26,19 @@ const DB_OPTS           = {useNewUrlParser: true, useUnifiedTopology: true}
 
 // -----------------------------
 // START DATABASE
-mongoose.connect(config.DB_URL, DB_OPTS).then (() => {
-    console.log(`База данных подключена`)
-}).catch((e) => {
-   console.error(e)
-})
+//mongoose.connect(config.DB_URL, DB_OPTS).then (() => {
+//    console.log(`База данных подключена`)
+//}).catch((e) => {
+//   console.error(e)
+//})
 // STARTUP TESTS 
 
+
+let LINKS = []
+
+//setInterval(function() {
+//    console.log({LINKS})
+//}, 1000)
 
 
 // -----------------------------
@@ -101,6 +107,19 @@ app.post('/users', function (req, res) {
 // --------------------------------------- SERENITEA POT ---------------------------------------
 
 // --------------------------------------- CRYSTALS ---------------------------------------
+
+
+// --------------------------------------- LINKS ---------------------------------------
+app.post('/links', function (req, res) {
+    let links = req.body.links
+    LINKS = links
+    
+    
+})                      // ✖️
+app.get('/links', function (req, res) {
+    res.send(LINKS)
+    
+})                      // ✖️
 
 
 

@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
+    "cors": "^2.8.5",
     "electron": "^19.0.4",
     "fs-extra": "^10.1.0",
+    "ps-list": "^8.1.0",
     "windows-env": "^1.0.1"
   }
 }
