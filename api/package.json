@@ -18,8 +18,10 @@
     "crypto": "^1.0.1",
     "express": "^4.18.1",
     "express-session": "^1.17.3",
+    "fs-extra": "^10.1.0",
     "mongoose": "^6.3.8",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "node-telegram-bot-api": "^0.58.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
